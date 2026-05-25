@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send(`Hello from inside a container! Hostname: ${require('os').hostname()}`);
+  res.send(`Hello from inside a container! Hostname: ${require('os').hostname()} at render.com!`);
 });
 
 app.get('/health', (req, res) => {

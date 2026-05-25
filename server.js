@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/render', (req, res) => {
-  res.json({ status: 'hello this is render.com ' });
+  res.json({ status: 'hello this is render.com !!' });
 });
 
 if (require.main === module) {

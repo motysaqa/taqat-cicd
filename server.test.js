@@ -5,7 +5,7 @@ describe('GET /', () => {
   it('returns 200 with hostname message', async () => {
     const res = await request(app).get('/');
     expect(res.status).toBe(200);
-    expect(res.text).toMatch(/Hello from inside a container at render.com!/);
+    expect(res.text).toMatch(/Hello from inside a container!/);
   });
 });
 
